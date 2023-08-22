@@ -1,0 +1,400 @@
+:root {
+  --almost-black: hsl(0, 0%, 8%);
+  --medium-grey: hsl(0, 0%, 41%);
+  --almost-white: hsl(0, 0%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
+/********* Image-Section ***********/
+
+.desktop-hero-img {
+  display: none;
+}
+
+.mobile-hero-img {
+  width: 100%;
+}
+
+/*********** Typography-Section **********/
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 1em;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--medium-grey);
+  text-align: center;
+}
+
+a {
+  color: var(--medium-grey);
+  opacity: 100%;
+}
+
+a:hover {
+  color: var(--almost-black);
+  opacity: 100%;
+  font-weight: 700;
+}
+
+/************ Navigation-Section ************/
+
+header {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-around;
+  gap: 13em;
+  cursor: pointer;
+}
+
+#navbar {
+  width: 14em;
+  height: 100%;
+  background-color: var(--almost-white);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+#menu_icon {
+  z-index: 3;
+}
+
+#close_menu_icon {
+  display: none;
+  z-index: 3;
+}
+
+.nav-icon {
+  display: flex;
+  gap: 10px;
+}
+
+ul {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+li {
+  margin-left: 1.5em;
+  font-weight: 700;
+}
+
+#inner_feature_drop {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-left: 1em;
+  color: var(--medium-grey);
+  font-weight: 700;
+  display: none;
+}
+
+#inner_company_drop {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-left: 1em;
+  color: var(--medium-grey);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: none;
+}
+
+.the-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.nav_btn_container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-btn {
+  padding: 0.85em 5em;
+  border: none;
+  border-radius: 15px;
+}
+
+.nav-btn:nth-child(1) {
+  border: none;
+  background: none;
+}
+
+.nav-btn:nth-child(2) {
+  background: none;
+  border: 1px solid var(--almost-black);
+}
+
+.nav-btn:nth-child(1):hover {
+  font-weight: 700;
+}
+
+.nav-btn:nth-child(2):hover {
+  border: 2px solid var(--almost-black);
+  font-weight: 700;
+}
+
+/******** Main-Section *********/
+
+.lock_up_container {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3em;
+}
+
+.company-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.lockup-btn {
+  margin-top: 2em;
+  padding: 1em 2em;
+  border-radius: 15px;
+  border: none;
+  font-weight: 700;
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+}
+
+.lockup-btn:hover {
+  background: none;
+  border: 2px solid var(--almost-black);
+  color: var(--almost-black);
+}
+
+.company_name_container {
+  margin-top: 1.5em;
+}
+
+/************ Responsive-Section ************/
+/************ Responsive-Section ************/
+
+@media (min-width: 900px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2em;
+  }
+
+  span a {
+    font-size: 0.85rem;
+  }
+
+  #menu_icon {
+    display: none;
+  }
+
+  #navbar {
+    width: 0em;
+    height: 0;
+    background-color: none;
+    position: absolute;
+    top: 1;
+    left: 37%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    display: block;
+  }
+
+  ul {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0em;
+  }
+
+  #features_drop {
+    display: block;
+  }
+
+  .the-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-btn {
+    padding: 0.85em 2em;
+    border: none;
+    border-radius: 15px;
+  }
+
+  #features_drop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+  }
+
+  #company_drop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .todo {
+    margin-top: 1.5em;
+  }
+
+  #inner_feature_drop {
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+    height: 14em;
+    background-color: var(--almost-white);
+    position: absolute;
+    top: 2em;
+    right: 6em;
+    z-index: 1;
+    border-radius: 6px;
+    display: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  #inner_company_drop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 9em;
+    height: 9em;
+    background-color: var(--almost-white);
+    position: absolute;
+    top: 2em;
+    z-index: 1;
+    border-radius: 6px;
+    display: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  .nav_btn_container {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    left: 22em;
+    top: 1em;
+  }
+
+  /*********** Lockup-Hero-Container ***********/
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--medium-grey);
+    text-align: left;
+  }
+
+  .desktop-hero-img {
+    display: block;
+    width: 80%;
+  }
+
+  .mobile-hero-img {
+    display: none;
+  }
+
+  .lock_up_container {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    gap: 12em;
+    margin-left: 5%;
+  }
+
+  .company-text-container {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+    width: 80%;
+  }
+
+  p {
+    margin-top: 2em;
+    font-size: 1.3rem;
+    width: 90%;
+  }
+
+  #navbar {
+    width: 0em;
+    height: 0;
+    background-color: none;
+    position: absolute;
+    top: 1;
+    left: 25%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    display: block;
+  }
+
+  .nav_btn_container {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    left: 50em;
+    top: 1em;
+  }
+
+  .lockup-btn {
+    margin-top: 3em;
+  }
+}

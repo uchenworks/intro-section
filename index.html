@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="intro.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/logo.svg" alt="logo" />
+      <img
+        id="menu_icon"
+        onclick="menuIcon()"
+        src="images/icon-menu.svg"
+        alt="icon-menu"
+      />
+      <img
+        src="images/icon-close-menu.svg"
+        id="close_menu_icon"
+        alt="icon-close-menu"
+        onclick="closeMenu()"
+      />
+      <nav id="navbar">
+        <ul>
+          <li>
+            <div id="features_drop" onclick="firstDrop()">
+              <span> <a href="#"> Features </a></span>
+              <img
+                id="dropdown_arrow1"
+                src="images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+              />
+
+              <div id="inner_feature_drop">
+                <div class="todo nav-icon">
+                  <img src="images/icon-todo.svg" alt="icon-calendar" /><span
+                    >Todo List</span
+                  >
+                </div>
+                <div class="calendar nav-icon">
+                  <img
+                    src="images/icon-calendar.svg"
+                    alt="icon-calendar"
+                  /><span>Calendar</span>
+                </div>
+                <div class="Remainders nav-icon">
+                  <img
+                    src="images/icon-reminders.svg"
+                    alt="icon-reminders"
+                  /><span>icon-reminders</span>
+                </div>
+                <div class="planning nav-icon">
+                  <img
+                    src="images/icon-planning.svg"
+                    alt="icon-planning"
+                  /><span>Planning</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div id="company_drop" onclick="secondDrop()">
+              <span> <a href="#">Company</a></span>
+              <img
+                id="dropdown_arrow2"
+                src="images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+              />
+              <div id="inner_company_drop">
+                <span class="company-nav-text">History</span>
+                <span class="company-nav-text">Our Team</span>
+                <span class="company-nav-text">Blog</span>
+              </div>
+            </div>
+          </li>
+          <div class="the-wrapper">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </div>
+        </ul>
+        <div class="nav_btn_container">
+          <button class="nav-btn">Login</button>
+          <button class="nav-btn">Register</button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="lock_up_container">
+      <div class="company-text-container">
+        <div class="locup-up-text-container">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+
+          <button class="lockup-btn">Learn more</button>
+        </div>
+        <div class="company_name_container">
+          <img
+            class="company_name"
+            src="images/client-databiz.svg"
+            alt="client-databiz"
+          />
+          <img
+            class="company_name"
+            src="images/client-audiophile.svg"
+            alt="client-audiophile"
+          />
+          <img
+            class="company_name"
+            src="images/client-meet.svg"
+            alt="client-meet"
+          />
+          <img
+            class="company_name"
+            src="images/client-maker.svg"
+            alt="client-maker"
+          />
+        </div>
+      </div>
+
+      <div class="lockup-hero-img-container">
+        <img
+          src="images/image-hero-desktop.png"
+          class="desktop-hero-img"
+          alt="image-hero-desktop"
+        />
+        <img
+          src="images/image-hero-mobile.png"
+          class="mobile-hero-img"
+          alt="image-hero-mobile"
+        />
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
